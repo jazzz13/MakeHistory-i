@@ -114,11 +114,6 @@
 		0942BCCE1725A54400F19416 = {
 			isa = PBXGroup;
 			children = (
-				09BE0B8217304832004F8834 /* Social.framework */,
-				09BE0B801730482B004F8834 /* Security.framework */,
-				09BE0B7E17304821004F8834 /* libsqlite3.dylib */,
-				09BE0B7C17304819004F8834 /* Accounts.framework */,
-				09BE0B7A1730480F004F8834 /* AdSupport.framework */,
 				0942BCE51725A54400F19416 /* MakeHistory */,
 				0942BD131725A54500F19416 /* MakeHistoryTests */,
 				0942BCDC1725A54400F19416 /* Frameworks */,
@@ -138,6 +133,11 @@
 		0942BCDC1725A54400F19416 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09BE0B7A1730480F004F8834 /* AdSupport.framework */,
+				09BE0B7C17304819004F8834 /* Accounts.framework */,
+				09BE0B7E17304821004F8834 /* libsqlite3.dylib */,
+				09BE0B801730482B004F8834 /* Security.framework */,
+				09BE0B8217304832004F8834 /* Social.framework */,
 				0942BCDD1725A54400F19416 /* UIKit.framework */,
 				0942BCDF1725A54400F19416 /* Foundation.framework */,
 				0942BCE11725A54400F19416 /* CoreGraphics.framework */,
