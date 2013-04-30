@@ -28,6 +28,11 @@
 		0942BD101725A54500F19416 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0942BCE31725A54400F19416 /* CoreData.framework */; };
 		0942BD181725A54500F19416 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0942BD161725A54500F19416 /* InfoPlist.strings */; };
 		0942BD1B1725A54500F19416 /* MakeHistoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0942BD1A1725A54500F19416 /* MakeHistoryTests.m */; };
+		09BE0B7B1730480F004F8834 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B7A1730480F004F8834 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		09BE0B7D17304819004F8834 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B7C17304819004F8834 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		09BE0B7F17304821004F8834 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B7E17304821004F8834 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		09BE0B811730482B004F8834 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B801730482B004F8834 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		09BE0B8317304832004F8834 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B8217304832004F8834 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,11 @@
 		0942BD171725A54500F19416 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0942BD191725A54500F19416 /* MakeHistoryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakeHistoryTests.h; sourceTree = "<group>"; };
 		0942BD1A1725A54500F19416 /* MakeHistoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeHistoryTests.m; sourceTree = "<group>"; };
+		09BE0B7A1730480F004F8834 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		09BE0B7C17304819004F8834 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		09BE0B7E17304821004F8834 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		09BE0B801730482B004F8834 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		09BE0B8217304832004F8834 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09BE0B8317304832004F8834 /* Social.framework in Frameworks */,
+				09BE0B811730482B004F8834 /* Security.framework in Frameworks */,
+				09BE0B7F17304821004F8834 /* libsqlite3.dylib in Frameworks */,
+				09BE0B7D17304819004F8834 /* Accounts.framework in Frameworks */,
+				09BE0B7B1730480F004F8834 /* AdSupport.framework in Frameworks */,
 				0942BCDE1725A54400F19416 /* UIKit.framework in Frameworks */,
 				0942BCE01725A54400F19416 /* Foundation.framework in Frameworks */,
 				0942BCE21725A54400F19416 /* CoreGraphics.framework in Frameworks */,
@@ -99,6 +114,11 @@
 		0942BCCE1725A54400F19416 = {
 			isa = PBXGroup;
 			children = (
+				09BE0B8217304832004F8834 /* Social.framework */,
+				09BE0B801730482B004F8834 /* Security.framework */,
+				09BE0B7E17304821004F8834 /* libsqlite3.dylib */,
+				09BE0B7C17304819004F8834 /* Accounts.framework */,
+				09BE0B7A1730480F004F8834 /* AdSupport.framework */,
 				0942BCE51725A54400F19416 /* MakeHistory */,
 				0942BD131725A54500F19416 /* MakeHistoryTests */,
 				0942BCDC1725A54400F19416 /* Frameworks */,
