@@ -28,6 +28,12 @@
 		0942BD101725A54500F19416 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0942BCE31725A54400F19416 /* CoreData.framework */; };
 		0942BD181725A54500F19416 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0942BD161725A54500F19416 /* InfoPlist.strings */; };
 		0942BD1B1725A54500F19416 /* MakeHistoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0942BD1A1725A54500F19416 /* MakeHistoryTests.m */; };
+		09CB5CBE1730367100BB83E5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CB5CBD1730367100BB83E5 /* FacebookSDK.framework */; };
+		09CB5CC11730379900BB83E5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CB5CC01730379900BB83E5 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		09CB5CC3173037A200BB83E5 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CB5CC2173037A200BB83E5 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		09CB5CC5173037AE00BB83E5 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CB5CC4173037AE00BB83E5 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		09CB5CC7173037B600BB83E5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CB5CC6173037B600BB83E5 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		09CB5CC9173037BE00BB83E5 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CB5CC8173037BE00BB83E5 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,12 @@
 		0942BD171725A54500F19416 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0942BD191725A54500F19416 /* MakeHistoryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakeHistoryTests.h; sourceTree = "<group>"; };
 		0942BD1A1725A54500F19416 /* MakeHistoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeHistoryTests.m; sourceTree = "<group>"; };
+		09CB5CBD1730367100BB83E5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		09CB5CC01730379900BB83E5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		09CB5CC2173037A200BB83E5 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		09CB5CC4173037AE00BB83E5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		09CB5CC6173037B600BB83E5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		09CB5CC8173037BE00BB83E5 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +87,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09CB5CC9173037BE00BB83E5 /* Social.framework in Frameworks */,
+				09CB5CC7173037B600BB83E5 /* Security.framework in Frameworks */,
+				09CB5CC5173037AE00BB83E5 /* libsqlite3.dylib in Frameworks */,
+				09CB5CC3173037A200BB83E5 /* Accounts.framework in Frameworks */,
+				09CB5CC11730379900BB83E5 /* AdSupport.framework in Frameworks */,
 				0942BCDE1725A54400F19416 /* UIKit.framework in Frameworks */,
 				0942BCE01725A54400F19416 /* Foundation.framework in Frameworks */,
 				0942BCE21725A54400F19416 /* CoreGraphics.framework in Frameworks */,
 				0942BCE41725A54400F19416 /* CoreData.framework in Frameworks */,
+				09CB5CBE1730367100BB83E5 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +136,12 @@
 		0942BCDC1725A54400F19416 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09CB5CC4173037AE00BB83E5 /* libsqlite3.dylib */,
+				09CB5CC8173037BE00BB83E5 /* Social.framework */,
+				09CB5CC6173037B600BB83E5 /* Security.framework */,
+				09CB5CC2173037A200BB83E5 /* Accounts.framework */,
+				09CB5CC01730379900BB83E5 /* AdSupport.framework */,
+				09CB5CBD1730367100BB83E5 /* FacebookSDK.framework */,
 				0942BCDD1725A54400F19416 /* UIKit.framework */,
 				0942BCDF1725A54400F19416 /* Foundation.framework */,
 				0942BCE11725A54400F19416 /* CoreGraphics.framework */,
@@ -406,9 +430,14 @@
 		0942BD1F1725A54500F19416 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MakeHistory/MakeHistory-Prefix.pch";
 				INFOPLIST_FILE = "MakeHistory/MakeHistory-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -417,9 +446,14 @@
 		0942BD201725A54500F19416 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MakeHistory/MakeHistory-Prefix.pch";
 				INFOPLIST_FILE = "MakeHistory/MakeHistory-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
