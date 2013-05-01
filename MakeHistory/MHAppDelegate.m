@@ -10,6 +10,8 @@
 
 #import "MHMasterViewController.h"
 
+#import <FacebookSDK/FacebookSDK.h>
+
 @implementation MHAppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -18,7 +20,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSLog(@"begin LOGIN");
+    
+    NSArray *permissions = [[NSArray alloc] initWithObjects:@"email", nil];
+    
+    [FBSession openActiveSessionWithReadPermissions:permissions
+                                       allowLoginUI:YES
+                                  completionHandler:^(FBSession *session,
+                                                     FBSessionState status,
+                                                      NSError *error){
+                                  
+                                      NSLog(@"RUN!");
+                                  }];
+    
+    /*
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
@@ -32,6 +47,8 @@
         MHMasterViewController *controller = (MHMasterViewController *)navigationController.topViewController;
         controller.managedObjectContext = self.managedObjectContext;
     }
+     
+     */
     return YES;
 }
 							

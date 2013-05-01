@@ -28,6 +28,7 @@
 		0942BD101725A54500F19416 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0942BCE31725A54400F19416 /* CoreData.framework */; };
 		0942BD181725A54500F19416 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0942BD161725A54500F19416 /* InfoPlist.strings */; };
 		0942BD1B1725A54500F19416 /* MakeHistoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0942BD1A1725A54500F19416 /* MakeHistoryTests.m */; };
+		097BB59A1731155B004B569F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097BB5991731155B004B569F /* FacebookSDK.framework */; };
 		09BE0B7B1730480F004F8834 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B7A1730480F004F8834 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		09BE0B7D17304819004F8834 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B7C17304819004F8834 /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		09BE0B7F17304821004F8834 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B7E17304821004F8834 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -73,6 +74,7 @@
 		0942BD171725A54500F19416 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0942BD191725A54500F19416 /* MakeHistoryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakeHistoryTests.h; sourceTree = "<group>"; };
 		0942BD1A1725A54500F19416 /* MakeHistoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeHistoryTests.m; sourceTree = "<group>"; };
+		097BB5991731155B004B569F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = Libs/FacebookSDK.framework; sourceTree = "<group>"; };
 		09BE0B7A1730480F004F8834 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		09BE0B7C17304819004F8834 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		09BE0B7E17304821004F8834 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -94,6 +96,7 @@
 				0942BCE01725A54400F19416 /* Foundation.framework in Frameworks */,
 				0942BCE21725A54400F19416 /* CoreGraphics.framework in Frameworks */,
 				0942BCE41725A54400F19416 /* CoreData.framework in Frameworks */,
+				097BB59A1731155B004B569F /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +136,7 @@
 		0942BCDC1725A54400F19416 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				097BB5991731155B004B569F /* FacebookSDK.framework */,
 				09BE0B7A1730480F004F8834 /* AdSupport.framework */,
 				09BE0B7C17304819004F8834 /* Accounts.framework */,
 				09BE0B7E17304821004F8834 /* libsqlite3.dylib */,
@@ -426,6 +430,10 @@
 		0942BD1F1725A54500F19416 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libs\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MakeHistory/MakeHistory-Prefix.pch";
 				INFOPLIST_FILE = "MakeHistory/MakeHistory-Info.plist";
@@ -437,6 +445,10 @@
 		0942BD201725A54500F19416 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libs\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MakeHistory/MakeHistory-Prefix.pch";
 				INFOPLIST_FILE = "MakeHistory/MakeHistory-Info.plist";
