@@ -20,19 +20,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSLog(@"begin LOGIN");
-    
-    NSArray *permissions = [[NSArray alloc] initWithObjects:@"email", nil];
-    
-    [FBSession openActiveSessionWithReadPermissions:permissions
-                                       allowLoginUI:YES
-                                  completionHandler:^(FBSession *session,
-                                                     FBSessionState status,
-                                                      NSError *error){
-                                  
-                                      NSLog(@"RUN!");
-                                  }];
-    
     /*
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;

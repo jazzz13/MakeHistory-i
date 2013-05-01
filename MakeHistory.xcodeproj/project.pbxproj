@@ -34,6 +34,7 @@
 		09BE0B7F17304821004F8834 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B7E17304821004F8834 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
 		09BE0B811730482B004F8834 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B801730482B004F8834 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		09BE0B8317304832004F8834 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B8217304832004F8834 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2EB9D69CFAF01E694E05E195 /* MHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9D0E9AEAC242F7D71EB3C /* MHLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		09BE0B7E17304821004F8834 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		09BE0B801730482B004F8834 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		09BE0B8217304832004F8834 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2EB9D0E9AEAC242F7D71EB3C /* MHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLoginViewController.m; sourceTree = "<group>"; };
+		2EB9D72F71E33C2B4318A773 /* MHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLoginViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,7 @@
 				0942BD041725A54500F19416 /* MHDetailViewController.m */,
 				0942BCFD1725A54500F19416 /* MakeHistory.xcdatamodeld */,
 				0942BCE61725A54400F19416 /* Supporting Files */,
+				2EB9DD763980D07FB709384A /* Screens */,
 			);
 			path = MakeHistory;
 			sourceTree = "<group>";
@@ -199,6 +203,23 @@
 				0942BD161725A54500F19416 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EB9D9D172F4CAA54348AACB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9D0E9AEAC242F7D71EB3C /* MHLoginViewController.m */,
+				2EB9D72F71E33C2B4318A773 /* MHLoginViewController.h */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2EB9DD763980D07FB709384A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9D9D172F4CAA54348AACB /* Login */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +339,7 @@
 				0942BCFF1725A54500F19416 /* MakeHistory.xcdatamodeld in Sources */,
 				0942BD021725A54500F19416 /* MHMasterViewController.m in Sources */,
 				0942BD051725A54500F19416 /* MHDetailViewController.m in Sources */,
+				2EB9D69CFAF01E694E05E195 /* MHLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
