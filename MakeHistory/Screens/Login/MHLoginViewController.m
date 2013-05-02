@@ -7,10 +7,16 @@
 
 #import <FacebookSDK/FacebookSDK.h>
 #import "MHLoginViewController.h"
+#import "MHLoginPresenter.h"
 
 
 @implementation MHLoginViewController {
 
+}
+
+- (MHLoginPresenter *)loginPresenter{
+
+    return (MHLoginPresenter *)self.presenter;
 }
 
 - (void)viewDidUnload {
@@ -21,17 +27,19 @@
     [super viewDidUnload];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)createPresenter {
 
-    if (FBSession.activeSession.state == FBSessionStateCreatedTokenLoaded) {
+    self.presenter = [MHLoginPresenter new];
+}
 
-        [self openSession];
+- (IBAction)fbLoginButtonPress:(UIButton *)sender {
 
-    } else {
+    [self.loginPresenter userPressFBButton];
+}
 
-        [_fbLoginButton setHidden:NO];
-    }
+- (void)disableFBButton {
+
+    [self.fbLoginButton setEnabled:NO];
 }
 
 - (void)openSession {
@@ -65,11 +73,6 @@
                     }
                 }];
     }
-}
-
-- (IBAction)fbLoginButtonPress:(UIButton *)sender {
-
-    [self openSession];
 }
 
 @end
