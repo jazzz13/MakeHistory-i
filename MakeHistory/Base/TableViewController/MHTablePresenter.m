@@ -1,30 +1,30 @@
 //
-// Created by cris on 03.05.13.
+// Created by cris on 04.05.13.
 //
 // To change the template use AppCode | Preferences | File Templates.
 //
 
 
-#import "MHHistoriesPresenter.h"
+#import "MHTablePresenter.h"
 
 
-@implementation MHHistoriesPresenter {
+@implementation MHTablePresenter {
 
 }
 
 - (int)sectionsCount {
 
-    return 1;
+    return 0;
 }
 
 - (int)rowsCountInSection:(int)section {
 
-    return 5;
+    return 0;
 }
 
 - (NSString *)titleForCellByIndexPath:(NSIndexPath *)indexPath {
 
-    return [NSString stringWithFormat:@"name history %d", indexPath.row];
+    return @"OVERRIDE!!! MHTableViewController";
 }
 
 @end

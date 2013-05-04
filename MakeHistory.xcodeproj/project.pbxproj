@@ -34,10 +34,14 @@
 		09BE0B7F17304821004F8834 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B7E17304821004F8834 /* libsqlite3.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
 		09BE0B811730482B004F8834 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B801730482B004F8834 /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		09BE0B8317304832004F8834 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE0B8217304832004F8834 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2EB9D208C9D16518CAA2DBB9 /* MHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9D967F922826225C453A8 /* MHTableViewController.m */; };
 		2EB9D33B3BEEBC95A84EDB7D /* MHLoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9D234EEFE21E96203D149 /* MHLoginPresenter.m */; };
 		2EB9D3F82498E59FC3274EFD /* MHAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9D6BD8E7276D6190F38A5 /* MHAccount.m */; };
+		2EB9D5635882E11C72B083E0 /* MHTablePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9D3C39AA513128262126E /* MHTablePresenter.m */; };
 		2EB9D69CFAF01E694E05E195 /* MHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9D0E9AEAC242F7D71EB3C /* MHLoginViewController.m */; };
+		2EB9D8578A0CBA31472D75D2 /* MHLibraryPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9DF19A7AB991B99AD35F0 /* MHLibraryPresenter.m */; };
 		2EB9D90A6ADB360BFBA0E915 /* MHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9D684143D5347704604EC /* MHViewController.m */; };
+		2EB9D921C68B4072FBEFB4B9 /* MHLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9D9C5F100A7DD8DC83AA5 /* MHLibraryViewController.m */; };
 		2EB9DBEE264FD22C268D8392 /* MHHistoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9D00ED6FF4C66F52094AA /* MHHistoriesViewController.m */; };
 		2EB9DCC04031255186804FDB /* MHPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9DD2F0DC99E5B679EB949 /* MHPresenter.m */; };
 		2EB9DEEE7B8E530F545D1BD6 /* MHHistoriesPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9DDCBBE25AA7801391954 /* MHHistoriesPresenter.m */; };
@@ -68,8 +72,8 @@
 		0942BCF11725A54400F19416 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0942BCF31725A54400F19416 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		0942BCF51725A54400F19416 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		0942BCF81725A54400F19416 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		0942BCFB1725A54400F19416 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		0942BCF81725A54400F19416 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MainStoryboard_iPhone.storyboard; path = ../en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		0942BCFB1725A54400F19416 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MainStoryboard_iPad.storyboard; path = ../en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		0942BCFE1725A54500F19416 /* MakeHistory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MakeHistory.xcdatamodel; sourceTree = "<group>"; };
 		0942BD001725A54500F19416 /* MHMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHMasterViewController.h; sourceTree = "<group>"; };
 		0942BD011725A54500F19416 /* MHMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHMasterViewController.m; sourceTree = "<group>"; };
@@ -90,17 +94,25 @@
 		2EB9D00ED6FF4C66F52094AA /* MHHistoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHHistoriesViewController.m; sourceTree = "<group>"; };
 		2EB9D0E9AEAC242F7D71EB3C /* MHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLoginViewController.m; sourceTree = "<group>"; };
 		2EB9D234EEFE21E96203D149 /* MHLoginPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLoginPresenter.m; sourceTree = "<group>"; };
+		2EB9D315F433F21B41015A5A /* MHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTableViewController.h; sourceTree = "<group>"; };
+		2EB9D3C39AA513128262126E /* MHTablePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTablePresenter.m; sourceTree = "<group>"; };
+		2EB9D46A5654EBC944A97E2C /* MHLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLibraryViewController.h; sourceTree = "<group>"; };
 		2EB9D53FC4C7E3D59F6A836F /* MHHistoriesPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHHistoriesPresenter.h; sourceTree = "<group>"; };
 		2EB9D5DD65085C4FB88DBFE5 /* MHHistoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHHistoriesViewController.h; sourceTree = "<group>"; };
 		2EB9D5E4F2251777F1E72897 /* MHPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPresenter.h; sourceTree = "<group>"; };
 		2EB9D684143D5347704604EC /* MHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHViewController.m; sourceTree = "<group>"; };
 		2EB9D6BD8E7276D6190F38A5 /* MHAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAccount.m; sourceTree = "<group>"; };
 		2EB9D72F71E33C2B4318A773 /* MHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLoginViewController.h; sourceTree = "<group>"; };
+		2EB9D860EFF817A1F1CA11CB /* MHLibraryPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLibraryPresenter.h; sourceTree = "<group>"; };
+		2EB9D967F922826225C453A8 /* MHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTableViewController.m; sourceTree = "<group>"; };
+		2EB9D9C5F100A7DD8DC83AA5 /* MHLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLibraryViewController.m; sourceTree = "<group>"; };
 		2EB9DA0D681F434F3CA8C89A /* MHLoginPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLoginPresenter.h; sourceTree = "<group>"; };
 		2EB9DB48F5FB4D005023F52D /* MHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHViewController.h; sourceTree = "<group>"; };
 		2EB9DD2F0DC99E5B679EB949 /* MHPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPresenter.m; sourceTree = "<group>"; };
 		2EB9DDCBBE25AA7801391954 /* MHHistoriesPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHHistoriesPresenter.m; sourceTree = "<group>"; };
+		2EB9DDD24E11B4A8143E299E /* MHTablePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTablePresenter.h; sourceTree = "<group>"; };
 		2EB9DED5DCE6996961D5958C /* MHAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAccount.h; sourceTree = "<group>"; };
+		2EB9DF19A7AB991B99AD35F0 /* MHLibraryPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLibraryPresenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,8 +189,6 @@
 			children = (
 				0942BCEE1725A54400F19416 /* MHAppDelegate.h */,
 				0942BCEF1725A54400F19416 /* MHAppDelegate.m */,
-				0942BCF71725A54400F19416 /* MainStoryboard_iPhone.storyboard */,
-				0942BCFA1725A54400F19416 /* MainStoryboard_iPad.storyboard */,
 				0942BD001725A54500F19416 /* MHMasterViewController.h */,
 				0942BD011725A54500F19416 /* MHMasterViewController.m */,
 				0942BD031725A54500F19416 /* MHDetailViewController.h */,
@@ -188,6 +198,7 @@
 				2EB9DD763980D07FB709384A /* Screens */,
 				2EB9D5FB08FE4CCA5254BB0E /* Base */,
 				2EB9DB865193298FD49510CF /* Accaunt */,
+				2EB9D5C3CC0D1C5882B4B36A /* Storyboards */,
 			);
 			path = MakeHistory;
 			sourceTree = "<group>";
@@ -225,15 +236,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2EB9D0B33D099D04F485F9F0 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9D3C39AA513128262126E /* MHTablePresenter.m */,
+				2EB9DDD24E11B4A8143E299E /* MHTablePresenter.h */,
+				2EB9D967F922826225C453A8 /* MHTableViewController.m */,
+				2EB9D315F433F21B41015A5A /* MHTableViewController.h */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		2EB9D5C3CC0D1C5882B4B36A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0942BCFA1725A54400F19416 /* MainStoryboard_iPad.storyboard */,
+				0942BCF71725A54400F19416 /* MainStoryboard_iPhone.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		2EB9D5FB08FE4CCA5254BB0E /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				2EB9DD2F0DC99E5B679EB949 /* MHPresenter.m */,
-				2EB9D5E4F2251777F1E72897 /* MHPresenter.h */,
-				2EB9D684143D5347704604EC /* MHViewController.m */,
-				2EB9DB48F5FB4D005023F52D /* MHViewController.h */,
+				2EB9DEE84AACD08CEDB23A85 /* ViewController */,
+				2EB9D0B33D099D04F485F9F0 /* TableViewController */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		2EB9D6A739F68792073CDDE2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9D9C5F100A7DD8DC83AA5 /* MHLibraryViewController.m */,
+				2EB9D46A5654EBC944A97E2C /* MHLibraryViewController.h */,
+				2EB9DF19A7AB991B99AD35F0 /* MHLibraryPresenter.m */,
+				2EB9D860EFF817A1F1CA11CB /* MHLibraryPresenter.h */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		2EB9D6FDEBE8746A5937C98E /* Histories */ = {
@@ -274,8 +314,20 @@
 			children = (
 				2EB9D9D172F4CAA54348AACB /* Login */,
 				2EB9D6FDEBE8746A5937C98E /* Histories */,
+				2EB9D6A739F68792073CDDE2 /* Library */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		2EB9DEE84AACD08CEDB23A85 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2EB9D5E4F2251777F1E72897 /* MHPresenter.h */,
+				2EB9DD2F0DC99E5B679EB949 /* MHPresenter.m */,
+				2EB9DB48F5FB4D005023F52D /* MHViewController.h */,
+				2EB9D684143D5347704604EC /* MHViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +454,10 @@
 				2EB9D3F82498E59FC3274EFD /* MHAccount.m in Sources */,
 				2EB9DBEE264FD22C268D8392 /* MHHistoriesViewController.m in Sources */,
 				2EB9DEEE7B8E530F545D1BD6 /* MHHistoriesPresenter.m in Sources */,
+				2EB9D5635882E11C72B083E0 /* MHTablePresenter.m in Sources */,
+				2EB9D208C9D16518CAA2DBB9 /* MHTableViewController.m in Sources */,
+				2EB9D921C68B4072FBEFB4B9 /* MHLibraryViewController.m in Sources */,
+				2EB9D8578A0CBA31472D75D2 /* MHLibraryPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +491,7 @@
 		0942BCF71725A54400F19416 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0942BCF81725A54400F19416 /* en */,
+				0942BCF81725A54400F19416 /* MainStoryboard_iPhone.storyboard */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -443,7 +499,7 @@
 		0942BCFA1725A54400F19416 /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0942BCFB1725A54400F19416 /* en */,
+				0942BCFB1725A54400F19416 /* MainStoryboard_iPad.storyboard */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";

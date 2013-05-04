@@ -24,7 +24,7 @@
 
 - (void)createPresenter {
 
-    NSLog(@"MHViewController FAIL createPresenter");
+    NSLog(@"OVERRIDE!!! MHViewController");
 }
 
 @end

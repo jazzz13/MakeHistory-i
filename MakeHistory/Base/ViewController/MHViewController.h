@@ -9,7 +9,7 @@
 @class MHPresenter;
 
 
-@interface MHViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface MHViewController : UIViewController {
 
 }
 

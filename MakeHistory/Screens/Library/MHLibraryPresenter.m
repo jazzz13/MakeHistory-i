@@ -1,14 +1,14 @@
 //
-// Created by cris on 03.05.13.
+// Created by cris on 04.05.13.
 //
 // To change the template use AppCode | Preferences | File Templates.
 //
 
 
-#import "MHHistoriesPresenter.h"
+#import "MHLibraryPresenter.h"
 
 
-@implementation MHHistoriesPresenter {
+@implementation MHLibraryPresenter {
 
 }
 
@@ -19,12 +19,12 @@
 
 - (int)rowsCountInSection:(int)section {
 
-    return 5;
+    return 10;
 }
 
 - (NSString *)titleForCellByIndexPath:(NSIndexPath *)indexPath {
 
-    return [NSString stringWithFormat:@"name history %d", indexPath.row];
+    return [NSString stringWithFormat:@"name book %d", indexPath.row];
 }
 
 @end
