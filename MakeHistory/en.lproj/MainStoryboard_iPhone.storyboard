@@ -197,7 +197,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Истории" id="gBf-c5-H4s"/>
+                    <navigationItem key="navigationItem" title="Истории" id="gBf-c5-H4s">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="Со мной: 0" id="1u7-0x-wBF"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="c7V-DT-2ig">
+                            <connections>
+                                <segue destination="qHi-3J-AUc" kind="push" id="cbB-EN-KzM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="2sJ-Eb-nxx" id="nvk-jx-eXe"/>
                     </connections>
@@ -205,6 +212,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPx-W5-ggw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1476" y="-665"/>
+        </scene>
+        <!--View Controller - Новая история-->
+        <scene sceneID="XsM-cp-tqh">
+            <objects>
+                <viewController id="qHi-3J-AUc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fXo-Mw-agz">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Экран создания новой истории" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MZX-VN-hIg">
+                                <rect key="frame" x="30" y="173" width="261" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Новая история" id="hJn-HN-dOt">
+                        <barButtonItem key="rightBarButtonItem" title="Создать" style="done" id="d7r-N0-mvg"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKe-tt-Ant" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2035" y="-665"/>
         </scene>
     </scenes>
     <classes>
